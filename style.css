@@ -1,0 +1,44 @@
+body {
+  overflow: hidden;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.section2 {
+  transform: translateY(100%);
+}
+
+.section3 {
+  transform: translateY(200%);
+}
+
+.indicators {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.active {
+  background-color: #333;
+}
